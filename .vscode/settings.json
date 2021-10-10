@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "json.schemas": [
+    {
+      "fileMatch": ["manifest.json"],
+      "url": "https://raw.githubusercontent.com/extend-chrome/manifest-json-schema/main/schema/manifest-v3.schema.json"
+    }
+  ]
+}

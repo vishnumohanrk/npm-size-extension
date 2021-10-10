@@ -1,0 +1,16 @@
+{
+  "name": "npm-size-extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["main.ts"],
+      "matches": ["https://www.npmjs.com/*"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["webNavigation"],
+  "background": {
+    "service_worker": "background.ts"
+  }
+}

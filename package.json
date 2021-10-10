@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "nodemon --watch src -e html,json,ts,css --exec yarn build"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.159",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.5",
+    "vite-plugin-chrome-extension": "^0.0.7"
+  }
+}
