@@ -4,7 +4,9 @@ const filter: chrome.webNavigation.WebNavigationEventFilter = {
 
 const getPackageName = (url: string) => {
   const packageURL = new URL(url);
-  return packageURL.pathname.replace('/package/', '');
+  const pkg = packageURL.pathname.replace('/package/', '');
+
+  return pkg.replace('/v/', '@');
 };
 
 const sendMsg = ({ tabId, url }: { tabId: number; url: string }) =>
